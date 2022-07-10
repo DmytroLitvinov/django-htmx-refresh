@@ -41,7 +41,7 @@ For when you want to handle htmx requests in all the views of a particular app.
 
 This is so our custom middleware class only affects apps we explicity define, preventing errors with other third-party apps such as the default django admin application.
 
-**Note**: The `HtmxReseponseMiddleware` class provided with this application uses the `process_template_response` hook, meaning any view you intend to be used with this class must return a response object that implements a `render` method. Luckily Django's class-based views do this for us with `TemplateResponse`.
+**Note**: The `HtmxResponseMiddleware` class provided with this application uses the `process_template_response` hook, meaning any view you intend to be used with this class must return a response object that implements a `render` method. Luckily Django's class-based views do this for us with `TemplateResponse`.
 
 ### Mixin
 
